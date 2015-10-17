@@ -4,16 +4,16 @@
 // Number of LEDs around the tube. One too much looks better (italic text look)
 // than one to few (backwards leaning text look)
 // Higher number = diameter of the torch gets larger
-const uint16_t ledsPerLevel = 17; // Original: 13, smaller tube 11, high density small 17
+const uint16_t ledsPerLevel = 16; // Original: 13, smaller tube 11, high density small 17
 
 // Number of "windings" of the LED strip around (or within) the tube
 // Higher number = torch gets taller
-const uint16_t levels = 16; // original 18, smaller tube 21, high density small 7
+const uint16_t levels = 15; // original 18, smaller tube 21, high density small 7
 
 // set to true if you wound the torch clockwise (as seen from top). Note that
 // this reverses the entire animation (in contrast to mirrorText, which only
 // mirrors text).
-const bool reversedX = false;
+const bool reversedX = true;
 // set to true if every other row in the LED matrix is ordered backwards.
 // This mode is useful for WS2812 modules which have e.g. 16x16 LEDs on one
 // flexible PCB. On these modules, the data line starts in the lower left
